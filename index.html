@@ -145,6 +145,25 @@
     </p>
     <p>&copy; 2025 Vuma Fibre. All rights reserved.</p>
   </footer>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DPw000006Z45x',
+				'AF_Sales_Agent',
+				'https://vumatel--vumdev.sandbox.my.site.com/ESWAFSalesAgent1765873293532',
+				{
+					scrt2URL: 'https://vumatel--vumdev.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://vumatel--vumdev.sandbox.my.site.com/ESWAFSalesAgent1765873293532/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
